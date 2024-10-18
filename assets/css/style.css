@@ -57,10 +57,12 @@ ul > li{
 
 .tarjeta{
     display: flex;
+
     align-items: center;
     flex-direction: column;
     margin: 0.5rem 0rem;
     width: 85%;
+    
 
     border: 1px solid #000;
 }
@@ -76,7 +78,13 @@ ul > li{
     
 }
 
+.text-tarjeta {
+    padding: 1rem;
+}
 
+.text-tarjeta > h4{
+    padding-bottom: 0.5rem;
+}
 
 footer{
     grid-area: footer;
