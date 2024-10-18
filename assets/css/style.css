@@ -38,7 +38,6 @@ nav{
 
 .accesorios > h4{
     padding: 2rem;
-    
 }
 
 ul > li{
@@ -47,9 +46,37 @@ ul > li{
 
 .galeria{
     grid-area: galeria;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,50%);
+    justify-items: center;
+    padding: 0.5rem;
+    
+    border: 1px solid #000;
+}
+
+.tarjeta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.5rem 0rem;
+    width: 85%;
 
     border: 1px solid #000;
 }
+
+.img-tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-tarjeta > img {
+    width: 100%;
+    
+}
+
+
 
 footer{
     grid-area: footer;
