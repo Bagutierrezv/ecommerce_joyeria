@@ -13,7 +13,7 @@ main{
     'navbar navbar'
     'accesorios galeria'
     'footer footer';
-    grid-template-columns: 20% auto;
+    grid-template-columns: 12% auto;
     grid-template-rows: 4rem auto 5rem;
 }
 
@@ -28,8 +28,21 @@ nav{
 
 .accesorios{
     grid-area: accesorios;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
 
     border: 1px solid #000;
+}
+
+.accesorios > h4{
+    padding: 2rem;
+    
+}
+
+ul > li{
+    list-style: none;
 }
 
 .galeria{
