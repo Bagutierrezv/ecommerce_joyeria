@@ -6,3 +6,40 @@
     box-sizing: border-box;
     font-family: "Raleway", sans-serif;
 }
+
+main{
+    display: grid;
+    grid-template-areas:
+    'navbar navbar'
+    'accesorios galeria'
+    'footer footer';
+    grid-template-columns: 20% auto;
+    grid-template-rows: 4rem auto 5rem;
+}
+
+nav{
+    grid-area: navbar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #000;
+}
+
+.accesorios{
+    grid-area: accesorios;
+
+    border: 1px solid #000;
+}
+
+.galeria{
+    grid-area: galeria;
+
+    border: 1px solid #000;
+}
+
+footer{
+    grid-area: footer;
+
+    border: 1px solid #000;
+}
