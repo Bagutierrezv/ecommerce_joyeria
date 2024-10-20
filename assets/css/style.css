@@ -14,34 +14,35 @@ main{
     'accesorios galeria'
     'footer footer';
     grid-template-columns: 12% auto;
-    grid-template-rows: 4rem auto 5rem;
+    grid-template-rows: 4rem auto 3rem;
 }
 
 nav{
+    background-color: rgb(140, 140, 255);
+    color: rgb(255, 255, 255);
     grid-area: navbar;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid #000;
 }
 
 .accesorios{
+    background-color: rgb(237, 237, 255);
+    color:rgb(87, 87, 255);
     grid-area: accesorios;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-
-    border: 1px solid #000;
 }
 
 .accesorios > h4{
-    padding: 2rem;
+    padding: 1.5rem 0rem 1rem;
 }
 
 ul > li{
     list-style: none;
+    color: #2b2b2b;
 }
 
 .galeria{
@@ -51,20 +52,16 @@ ul > li{
     grid-template-rows: repeat(2,50%);
     justify-items: center;
     padding: 0.5rem;
-    
-    border: 1px solid #000;
 }
 
 .tarjeta{
+    background-color: rgb(237, 237, 255);
     display: flex;
-
     align-items: center;
     flex-direction: column;
     margin: 0.5rem 0rem;
     width: 85%;
-    
-
-    border: 1px solid #000;
+    border: 1px solid rgb(140, 140, 255);
 }
 
 .img-tarjeta{
@@ -80,14 +77,31 @@ ul > li{
 
 .text-tarjeta {
     padding: 1rem;
+    color: #2b2b2b;
+    text-align: center;
 }
 
 .text-tarjeta > h4{
     padding-bottom: 0.5rem;
 }
+.text-tarjeta > p{
+    padding: 0.5rem 0rem 0.3rem;
+}
+
+.tarjeta > button{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    background-color:rgb(140, 140, 255);
+    color: #ffffff;
+    border-radius: 10px;
+}
 
 footer{
+    background-color: rgb(140, 140, 255);
     grid-area: footer;
-
-    border: 1px solid #000;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
